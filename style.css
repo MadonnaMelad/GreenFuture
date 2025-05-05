@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    font-family: 'Roboto',sans-serif;
+    color: #f1f8e9;
+    text-decoration: none;
+    list-style: none;
+}
+section,.right,.left,.social,.social i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{    
+    height: 100vh;
+    background-image: url(./images/bac.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section-wrap{
+    background-color: rgb(255, 255, 255, 0.2);
+    height: 78vh;
+    width: 75%;
+    border: 1px solid rgb(255, 255, 255, 0.2);
+    box-shadow: inset 0 0 5px rgb(255, 255, 255, 0.1);
+    border-radius: 30px;
+    backdrop-filter: blur(12px);
+    padding: 50px 100px;
+    overflow: hidden;
+}
+nav .head-cta{
+    z-index: 1;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.head-logo{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.head-logo span{
+    color: #8bc34a;
+}
+.nav-items{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+.nav-items::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%) scaleX(0);
+    height: 2px;
+    width: 100%;
+    background-color: #f1f8e9;
+    transition: 0.3s;
+    box-shadow: 0 0 3px #f1f8e9;
+}
+.nav-items:hover::before{
+    transform: translateX(-50%) scaleX(1);
+}
+.nav-items:hover{
+    text-shadow: 0 0 10px #f1f8e9;
+}
+.header-cta-btn{
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px solid #f1f8e9;
+    padding: 10px 40px;
+    border-radius: 25px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.header-cta-btn:hover{
+    background-color: #8bc34a;
+    border-color: #8bc34a;
+    box-shadow: 0 0 50px #8bc34a;
+
+}
+.hero-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.left{
+    flex-direction: column;
+    align-items: start;
+}
+.main-text{
+    font-size: 6rem ;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+.main-text span{
+    color: #8bc34a;
+}
+.sub-text{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: rgb(241, 248, 233, 0.8);
+    margin-bottom: 50px;
+}
+.hero-cta-btn{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding: 15px 50px;
+    background-color: #8bc34a;
+    color: #424242;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+ .btn1, .btn2{
+    color: #424242;
+}
+.btn1{
+    background-color: #8bc34a;
+    border: none;
+}
+.btn2{
+    background-color: #f1f8e9;
+}
+.header-cta-btn:hover{
+    box-shadow: 0 0 100px #8bc34a;
+}
+.btn2:hover{
+    box-shadow: 0 0 100px #f1f8e9;
+}
+.right img{
+    width: 85%;
+    filter: drop-shadow(0 0 20px #8bc34a);
+    animation: 30s treeScale linear infinite;
+    pointer-events: none;
+}
+.social i{
+    height: 25px;
+    width: 25px;
+    font-size: 1.2rem;
+    border: 1px solid #f1f8e9;
+    border-radius: 25px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 5px;
+}
+.social i:hover{
+    border-color: #8bc34a;
+    box-shadow: 0 0 100px #8bc34a;
+    text-shadow: 0 0 100px #8bc34a;
+    transform: rotate(360deg);
+    color: #8bc34a;
+}
+.section-title{
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.section-title span{
+    color: #8bc34a;
+}
+#about p{
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 50px;
+}
+.section-btn{
+    font-size: 1.2rem;
+    color: #424242;
+    background-color: #f1f8e9;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 25px;
+    padding: 12px 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.section-btn:hover{
+    background-color: #8bc34a;
+    box-shadow: 0 0 50px #8bc34a;
+}
+#about img{
+   position: absolute; 
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   opacity: 0.5;
+   pointer-events: none;
+}
+.project-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+}
+#project img{
+    width: 100%;
+    border-radius: 10px;
+}
+.card{
+    background-color: rgb(255, 255, 255,.3);
+    border: 1px solid rgb(255, 255, 255, 0.4);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+.card-title{
+    font-size: 1.2rem;
+    margin: 20px 0 10px;
+}
+.card:hover{
+    background-color: rgb(139, 195, 74, 0.3);
+    box-shadow: 0 0 50px #8bc34a;
+}
+#project .section-btn{
+    width: 100%;
+    margin-top: 50px;
+}
+.contact-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#contact .right img{
+    width: 80%;
+}
+#contact p{
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+input{
+    background-color: transparent;
+    color: #f1f8e9;
+    font-size: 1.2rem;
+    padding: 15px;
+    border: 1px solid #f1f8e9;
+    border-radius: 15px;
+}
+input::placeholder{
+    color: #f1f8e9;
+}
+textarea::placeholder{
+    color: #132217;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+textarea{
+    height: 180px;
+    color: #132217;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+form button{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #424242;
+    background-color: #f1f8e9;
+    padding: 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+form button:hover{
+    background-color: #8bc34a;
+    box-shadow: 0 0 10px #8bc34a;
+}
+
+#footer{
+    height: auto;
+    background-image: none;
+    background-color: #132217;
+}
+#footer .section-wrap{
+    height: auto;
+    margin: 50px 0;
+}
+.copyright{
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 10px;
+}
